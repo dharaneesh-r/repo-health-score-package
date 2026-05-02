@@ -1,0 +1,5 @@
+test/
+.github/
+*.test.js
+.gitignore
+.env

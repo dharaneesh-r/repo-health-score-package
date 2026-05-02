@@ -1,0 +1,33 @@
+{
+  "name": "repo-health-score",
+  "version": "1.0.0",
+  "description": "CLI tool that scores the health of any GitHub repository from 0 to 100",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "repo-health-score": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["github", "cli", "health", "score", "devtools", "repository", "metrics"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "octokit": "^3.1.0",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {},
+    "testEnvironment": "node"
+  }
+}
